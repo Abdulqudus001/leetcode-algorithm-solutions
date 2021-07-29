@@ -4,6 +4,7 @@
  */
  var isValid = function(s) {
   const openingBraces = new Set(['(', '[', '{']);
+  const closingBraces = new Set([')', ']', '}']);
   const match = {
     ')': '(',
     '}': '{',
@@ -12,8 +13,9 @@
   
   const openingBracesOrder = [];
   
-  if (openingBraces.has(s[0]) === false) {
-      // Starts with a closing bracket so it's invalid
+  if (closingBraces.has(s[0]) || openingBraces.has(s[s.length -1])) {
+      // Starts with a closing bracket or ends with an opening bracket
+      // so it's invalid
       return false;
   }
   
