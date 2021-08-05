@@ -31,12 +31,13 @@ var testCases = [][]*ListNode{
 func TestCases(t *testing.T) {
 	for key, val := range testCases {
 		t.Run(strconv.Itoa(key), func(t *testing.T) {
-			l1, l2, l3 := val...
-			returnVal := mergeTwoLists(l1, l2)
-			res := l3.getList()
-			for index, val := range returnVal.getList() {
-				if val != res[index] {
-					t.Errorf("input %v, expected %v, found %v", key, val, returnVal)
+			l1, l2, l3 := val[0], val[1], val[2]
+			returnResult := mergeTwoLists(l1, l2).getList()
+			expectedResult := l3.getList()
+                        // check equality between elements of expected result and returned result
+			for index, val := range returnResult {
+				if val != expectedResult[index] {
+					t.Errorf("input %v, expected %v, found %v", key, val, returnResult)
 				}
 			}
 		})
