@@ -31,7 +31,7 @@ var testCases = [][]*ListNode{
 func TestCases(t *testing.T) {
 	for key, val := range testCases {
 		t.Run(strconv.Itoa(key), func(t *testing.T) {
-			l1, l2, l3 := val[0], val[1], val[2]
+			l1, l2, l3 := val...
 			returnVal := mergeTwoLists(l1, l2)
 			res := l3.getList()
 			for index, val := range returnVal.getList() {
