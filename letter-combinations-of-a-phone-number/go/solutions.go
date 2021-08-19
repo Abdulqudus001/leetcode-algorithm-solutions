@@ -10,7 +10,7 @@ import (
 // 7 -> [p, q, r, s] and 8 -> [t, u, v]
 // if 7 and 8 were pressed, maxNumber to pass to permutation will be
 // (len(largestArrayOfDigits) ^ numberOfDigits) - 1
-// largestArrayofDigits = [p, q, r, s]
+// len(largestArrayofDigits) = len([p, q, r, s]) = 4
 // numberofDigits = 2
 // finalNumber of combinations should be the length of all digit arrays multiplied together i.e len([p, q, r, s]) * len([t, u, v]) = 12
 // base to use to represent each digit will also be len(largestArrayOfDigits)
