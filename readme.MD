@@ -26,3 +26,15 @@ Subfolders represent individual question slugs e.g
 # All Golang tests
 go test ./...
 ```
+
+## Running rust code
+
+```bash
+rustc <file-name.ext>
+
+# windows
+.\<file-name.exe>
+
+# linux
+./<file-name.exe>
+```
