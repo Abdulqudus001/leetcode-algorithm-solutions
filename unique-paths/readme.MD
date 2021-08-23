@@ -7,6 +7,7 @@ The robot can only move either down or right at any point in time. The robot is 
 How many possible unique paths are there?
 
 **Example 1**
+
 ![Example 1.png](https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png)
 ```
 Input: m = 3, n = 7
